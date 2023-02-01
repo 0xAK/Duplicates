@@ -1,0 +1,10 @@
+some_list = list('ddupliccatesss')
+duplicates = []
+how_many = []
+for value in some_list:
+    if some_list.count(value) > 1:
+        if value not in duplicates:
+            duplicates.append(value)
+            how_many.append(some_list.count(value))
+print(duplicates)
+print(how_many)
